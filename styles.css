@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Added background color for better visualization */
+}
+
+.main-container {
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 800px; /* Added max-width to prevent container from becoming too wide */
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CBD5E1;
+    padding: 20px; /* Added padding for spacing */
+    border-radius: 20px; /* Added border radius for rounded corners */
+}
+
+.title {
+    background-color: #2DD4BF;
+    width: 100%; /* Made title width 100% */
+    text-align: center;
+    color: #020617;
+    border-radius: 20px; /* Same border radius as main container */
+    margin-top: 10px; /* Increased margin top */
+    font-weight: 800;
+    font-size: larger;
+    padding: 10px; /* Added padding for spacing */
+}
+
+.value {
+    margin-top: 50px; /* Adjusted margin for better spacing */
+    width: 100%; /* Made value width 100% */
+}
+
+.value-input {
+    outline: none;
+    border: none;
+    font-size: 24px; /* Adjusted font size for better readability */
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%; /* Made input width 100% */
+}
+
+.from-to {
+    margin-top: 30px; /* Adjusted margin for better spacing */
+    display: flex;
+    justify-content: space-between; /* Changed to space-between for better alignment */
+    align-items: center;
+    gap: 10%; /* Changed to percentage for better flexibility */
+    width: 100%; /* Made from-to width 100% */
+}
+
+.calculate {
+    border-radius: 20px;
+    background-color: #2DD4BF;
+    margin: 50px 0;
+    font-size: 24px; /* Adjusted font size for better readability */
+    font-weight: 500;
+    padding: 15px 30px; /* Adjusted padding for better spacing */
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.calculate:hover {
+    background: #5EEAD4;
+    transition: background-color 0.5s; /* Added transition effect */
+}
+
+.show {
+    width: 100%; /* Made show width 100% */
+    max-width: 600px; /* Added max-width to prevent result container from becoming too wide */
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px; /* Added padding for spacing */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    display: none;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjusted gap for better spacing */
+}
